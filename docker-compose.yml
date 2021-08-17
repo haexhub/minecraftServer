@@ -5,6 +5,13 @@ services:
       - 25565:25565
     environment:
       EULA: "TRUE"
+      SERVER_NAME: "xintero"
+      DIFFICULTY: "peaceful"
+      ALLOW_NETHER: "TRUE"
+      GENERATE_STRUCTURES: "TRUE"
+      SPAWN_ANIMALS: "TRUE"
+      SPAWN_NPCS: "TRUE"
+      MODE: "creative"
     tty: true
     stdin_open: true
     restart: unless-stopped
