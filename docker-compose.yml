@@ -4,16 +4,16 @@ services:
     ports:
       - 25565:25565
     environment:
-      ALLOW_FLIGHT: "TRUE"
-      ALLOW_NETHER: "TRUE"
-      DIFFICULTY: "easy"
-      DIFFICULTY: "peaceful"
-      EULA: "TRUE"
-      GENERATE_STRUCTURES: "TRUE"
-      MODE: "creative"
-      SERVER_NAME: "xintero"
-      SPAWN_ANIMALS: "TRUE"
-      SPAWN_NPCS: "TRUE"
+      - ALLOW_FLIGHT=1
+      - ALLOW_NETHER=1
+      - DIFFICULTY=easy
+      - DIFFICULTY=peaceful
+      - EULA=1
+      - GENERATE_STRUCTURES=1
+      - MODE=creative
+      - SERVER_NAME=xintero
+      - SPAWN_ANIMALS=1
+      - SPAWN_NPCS=1
     tty: true
     stdin_open: true
     restart: unless-stopped
